@@ -7,8 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Include="C:\Users\Eetu\source\repos\blackjack\blackjack\Program.cs" Link="Program.cs" />
-  </ItemGroup>
-
 </Project>
