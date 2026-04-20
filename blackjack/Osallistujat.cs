@@ -1,7 +1,6 @@
 ﻿namespace blackjack;
 
-// Rajapinta kertoo, mitä osallistujan pitää osata tehdä.
-// Se ei määrittele tarkkaa toteutusta, vaan toimii yhteisenä sopimuksena.
+//Rajapinta
 public interface IParticipant
 {
     List<Card> Hand { get; }
@@ -78,6 +77,8 @@ public class Player : Participant
 
 public class Dealer : Participant
 {
+
+    //Pidetään yksi kortti aluksi piilossa.
     public override void ShowHand()
     {
         Console.WriteLine("Jakajan kortit:");

@@ -36,7 +36,8 @@ internal class Program
 
             bool playerBlackjack = player.Hand.Count == 2 && player.GetHandValue() == 21;
             bool dealerBlackjack = dealer.Hand.Count == 2 && dealer.GetHandValue() == 21;
-
+            
+            //Tarkistetaan onko blackjackia kummallakaan ennen hit/stand valintaa.
             if (playerBlackjack || dealerBlackjack)
             {
                 Console.WriteLine();
@@ -97,6 +98,7 @@ internal class Program
                 }
             }
 
+            //Jos pelaaja meni yli 21, ei jakajan vuoroa.
             if (playerBust)
             {
                 playing = AskContinue(player.Raha);
